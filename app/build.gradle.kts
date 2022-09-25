@@ -37,17 +37,12 @@ android {
     buildFeatures {
         dataBinding = true
     }
-//    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile::class).configureEach {
-//        kotlinOptions {
-//            freeCompilerArgs = freeCompilerArgs + "-Xjvm-default=all"
-//        }
-//    }
 }
 
 dependencies {
     /**TODO: 데이터 모듈은 없어야함, 샘플 코드 작성을 위해서 임시로 설정*/
     implementation(project(":data"))
-
+    implementation("com.google.code.gson:gson:2.9.1")
     implementation(project(":domain"))
     implementation(project(":shared"))
     implementation(Android.AndroidX.core)
