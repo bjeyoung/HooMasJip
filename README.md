@@ -11,17 +11,16 @@
 4. gradle 셋팅 (Kts로 변화 , Library Dependency 관리 셋팅) **[완료]**
 5. 앱 아이켁처 의논 및 프로토타입 제작 **[완료]** 
 6. 데이터 모델링, 필요한 api 목록 구성 -> **[완료]**
-7. **Shared**: 공유 모델 생성 
 8. **Data**: FireBase,Retrofit2, Request, Response Model, PagingSource, Shared Pref or DataStore 등등 셋팅 
 9. **Domain**: UseCase Naming, Network Exception 등등 셋팅
 10. **Data**: Remote/Local Data CRUD 테스트 (유닛 테스트)
 11. **Data**: CRUD 테스트 통과 후 DataSourece(옵션), Domain/Data Repository 패턴 구현, Mapper 구현(data -> shared)
 12. **Domain**:  UseCase, base 등등 구현 구체화
-13. **App**: manifest permission, core-ui, ui base , util, ui model mapper,base 등등.. 셋팅
-14. **App**: ViewModel 에 프레젠테이션 로직 작성
+13. **Presentation**: manifest permission, core-ui, ui base , util, ui model mapper,base 등등.. 셋팅
+14. **Presentation**: ViewModel 에 프레젠테이션 로직 작성
 15. **디자인**: UI 디자인 완성 (스타일 가이드, 재사용 컴포넌트) **진행 대기**
-16. **App**: 앱 테마에 맞는 커스텀 뷰 제작 
-17. **App**: 전체 View 작업 
+16. **Presentation**: 앱 테마에 맞는 커스텀 뷰 or Composable 제작 
+17. **Presentation**: 전체 UI 작업 
 
 
 ## 사용할 기술 스펙
@@ -44,22 +43,15 @@
    
 ### [전체 아키텍처]
 
- **1) shared**
-
-→ 모듈간의 의존없이 Data를 교환 할 수 있도록 서브 역활을 합니다.
-
-특이사항: Paiging 3 사용으로 인해 안드로이드 의존성이 생성 되었습니다.  
-다른 모듈에게 의존이 전이되지 않도록 주의가 필요합니다.
-
- **2) data** 
+ **1) data** 
 
 → 네트워크 통신 및 로컬 네트워크 통신을 책임 지며, 데이터 소스를 생성 및 로직을 처리 합니다.
 
- **3) domain**
+ **2) domain**
 
-→  전사적인 비즈니스 로직을 책임을 지며, 순수한 기획 의도를 나타냅니다.
+→  전사적인 비즈니스 로직을 책임을 지며, 순수한 도메인 의도를 나타냅니다.
 
- **4) app** 
+ **3) app** 
 
 → Ui 로직 및 UI, OS와의 소통을 담당하며 mvvm + aac DataBinding 형식으로 만들어집니다.   
    
