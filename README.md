@@ -51,7 +51,7 @@
 
 →  전사적인 비즈니스 로직을 책임을 지며, 순수한 도메인 의도를 나타냅니다.
 
- **3) app** 
+ **3) Presentation** 
 
 → Ui 로직 및 UI, OS와의 소통을 담당하며 mvvm + aac DataBinding 형식으로 만들어집니다.   
    
