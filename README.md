@@ -35,11 +35,6 @@
 - Hilt 
 - FireBase 
 - Naver Map
-
-## 구성할 아키텍처
-
-(의존 방향)   
-![화면 캡처 2022-08-10 201657](https://user-images.githubusercontent.com/60532838/183888294-aa4b0211-c60e-4278-9ae0-477181ac1ab2.png)
    
 ### [전체 아키텍처]
 
