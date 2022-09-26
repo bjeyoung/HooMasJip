@@ -48,7 +48,7 @@
 
  **3) Presentation** 
 
-→ Ui 로직 및 UI, OS와의 소통을 담당하며 mvvm + aac DataBinding 형식으로 만들어집니다.   
+→ Ui 로직 및 UI, OS와의 소통을 담당하며 mvvm 패턴에서의 V,VM의 역활 + AAC ViewBinding or Compose + AAC ViewModel 를 활용하여  만들어집니다.   
    
       
       
