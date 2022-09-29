@@ -3,7 +3,7 @@ plugins {
     id("com.android.application") version "7.2.0" apply false
     id("com.android.library") version kr.loner.buildsrc.Android.androidGradleVersion apply false
     id("com.google.dagger.hilt.android") version kr.loner.buildsrc.Android.hiltGradleVersion apply false
-    kotlin("android") version kr.loner.buildsrc.Kotlin.kotlinVersion apply false
+    kotlin("android") version "1.6.10" apply false
     kotlin("jvm") version kr.loner.buildsrc.Kotlin.kotlinVersion
     kotlin("plugin.serialization") version kr.loner.buildsrc.Network.kSerializationGradle
 }

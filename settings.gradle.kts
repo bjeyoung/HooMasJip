@@ -22,3 +22,4 @@ include(
 )
 include(":paging3sample")
 include(":apisample")
+include(":jysample")
